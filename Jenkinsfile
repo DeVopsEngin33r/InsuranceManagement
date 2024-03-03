@@ -46,9 +46,9 @@ node{
     stage('Publishing Image to DockerHub'){
         echo 'Pushing the docker image to DockerHub'
         withCredentials([usernamePassword(credentialsId: 'dockerHubAccount', usernameVariable: 'dockerUser', passwordVariable: 'dockerPassword')]) {
-			sh "docker login -u $dockerUser -p $dockerPassword"
+			//sh "docker login -u $dockerUser -p $dockerPassword"
 			sh "docker push $dockerUser/containername:$tag"
-			echo "Image push complete"
+			 echo "Image push complete"
         } 
     }    
 	
