@@ -8,7 +8,7 @@ node{
         //mavenCMD = "${mavenHome}/bin/mvn"
         tag="3.0"
 	dockerHubUser="anujsharma1990"
-	containerName="insure-me"
+	containerName="jenkins-project"
 	httpPort="8081"
     }
     
