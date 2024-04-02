@@ -26,7 +26,7 @@ node{
     }
     
     stage('Maven Build'){
-        sh "/opt/maven/bin/mvn clean package"         
+        sh "/opt/maven/bin/mvn package"
     }
     
     //stage('Publish Test Reports'){
